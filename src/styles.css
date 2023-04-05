@@ -1,0 +1,309 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: rgb(9, 9, 9);
+  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 100%;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+.h1 {
+  color: red;
+  font-size: 40px;
+  font-family: Helvetica;
+  padding: 20px;
+}
+
+.movie_div {
+  position: relative;
+  margin: 10px;
+  width: 240px;
+  transition: 0.7s all ease-in-out;
+  width: 240px;
+  height: 300px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  bottom: 20px;
+  margin-left: 10px;
+}
+
+.img {
+  width: 220px;
+  height: auto;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+  filter: brightness(30%);
+  transition: 0.7s all ease-in-out;
+}
+
+.display {
+  width: 100%;
+  position: relative;
+  color: white;
+  text-align: left;
+  height: 350px;
+  overflow: hidden;
+  box-shadow: rgba(66, 66, 66, 0.24) 0px 3px 8px;
+  border: 4px solid rgb(14, 14, 14);
+  border-radius: 20px;
+}
+
+.display_div {
+  position: relative;
+  height: 230px;
+  width: 30%;
+  padding: 120px;
+  left: -90px;
+  border-radius: 30%;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgba(14, 9, 9, 0)
+  );
+  bottom: 430px;
+}
+
+.display_div button {
+  background: red;
+  color: white;
+  padding: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid red;
+  font-size: 25px;
+  margin-top: 10px;
+  transition: 0.8s all ease-in-out;
+}
+
+.video {
+  width: 100%;
+  height: 400px;
+}
+
+.onhover {
+  width: 200px;
+  height: auto;
+  transition: 0.7s all ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.text,
+.about,
+.button {
+  visibility: hidden;
+}
+
+.onhover_h3 {
+  display: block;
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+  position: relative;
+  bottom: 350px;
+  padding: 20px;
+  transition: 0.8s all ease-in-out;
+}
+
+.onhover_p {
+  color: white;
+  position: relative;
+  bottom: 390px;
+  padding: 15px;
+  transition: 0.8s all ease-in-out;
+}
+
+.onhover_button {
+  color: white;
+  background: red;
+  position: relative;
+  bottom: 390px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  transition: 0.8s all ease-in-out;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.icons img {
+  width: 2%;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 2px;
+  border: 1px solid gray;
+  transition: 0.5s all ease-in-out;
+}
+
+.icons img:hover {
+  width: 1.7%;
+  transition: 0.5s all ease-in-out;
+  padding: 1px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0px;
+  margin-top: 100px;
+  transition: 0.5s all ease-in-out;
+  padding: 40px;
+}
+
+.footer_1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 23px;
+  color: rgb(192, 188, 188);
+}
+
+.div1,
+.div2,
+.div3 {
+  font-size: 10px;
+  color: grey;
+}
+.div1 p,
+.div2 p,
+.div3 p {
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+
+.div1 p:hover,
+.div2 p:hover,
+.div3 p:hover {
+  transition: 0.5s all ease-in-out;
+  color: rgb(182, 181, 181);
+  cursor: pointer;
+}
+
+.hr {
+  background-color: grey;
+  height: 3px;
+  border-radius: 10px;
+  border: none;
+  margin: 35px 0px;
+}
+
+.copyright {
+  text-align: center;
+  color: grey;
+  font-size: 12px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.popup {
+  display: block;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  background: rgb(9, 9, 9);
+  box-shadow: rgba(66, 66, 66, 0.24) 0px 3px 8px;
+  border: 2px solid grey;
+  position: fixed;
+  top: 10px;
+  height: 590px;
+  left: 20%;
+  z-index: 1;
+  transition: 0.4s all ease-in-out;
+  border-radius: 20px;
+}
+
+.popup div {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup iframe {
+  box-shadow: rgba(66, 66, 66, 0.24) 0px 3px 8px;
+}
+
+.popup .watch_now {
+  border-radius: 20px;
+  background: red;
+  color: white;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid red;
+  font-size: 20px;
+  transition: 0.8s all ease-in-out;
+}
+
+.popup .close {
+  border-radius: 20px;
+  background: red;
+  color: white;
+  position: relative;
+  left: 50%;
+  bottom: 10px;
+  cursor: pointer;
+  padding: 0px 20px;
+  border: 2px solid red;
+  font-size: 25px;
+  transition: 0.8s all ease-in-out;
+}
+
+.popup .close:hover,
+.popup .watch_now:hover,
+.display_div button:hover {
+  background: white;
+  color: rgb(20, 1, 1);
+  border: 2px solid red;
+}
+
+.nopopup {
+  display: none;
+}
+
+.watchnow {
+  display: block;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+.watchnow iframe {
+  width: 100%;
+  height: 630px;
+}
